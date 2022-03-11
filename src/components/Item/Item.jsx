@@ -1,10 +1,10 @@
 import React from "react";
 import './styles.css';
 
-function Item({text}){
+function Item(props){
     return(
         <div className="item">
-        {text}
+        <li>{props.text}</li>
         </div>
     )
 }

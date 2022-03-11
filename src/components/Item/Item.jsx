@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './styles.css';
 import ClearIcon from '@mui/icons-material/Clear';
 
+
+
 function Item(props){
 
     const [done, setDone] = useState(false);
@@ -24,7 +26,7 @@ function Item(props){
 
     return(
         <div className="item">
-        <li onClick={toggleDone}>{props.text}</li>
+        <li title={props.text} onClick={toggleDone}>{props.text}</li>
         <ClearIcon onClick={handleClick} className="delete" />
         </div>
         

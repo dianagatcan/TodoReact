@@ -1,4 +1,4 @@
-# Todo App
+# Todo React App
 
 This is a simple todo list that was created with React App. The user can add tasks, mark them as completed or delete them.
 

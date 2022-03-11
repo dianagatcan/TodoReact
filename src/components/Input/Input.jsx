@@ -18,12 +18,11 @@ function Input(props){
     }
 
     function handleChange(event){
-        console.log('handleChange')
         setTodo(event.target.value)
     }
 
     return(
-        <div class="form">
+        <div className="form">
              <input value={todo} onChange={handleChange} onKeyPress={(e)=>handleKeyPress(e)} type="text" placeholder="What needs to be done?"></input>
         </div>
     )

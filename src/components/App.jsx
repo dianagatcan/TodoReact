@@ -12,14 +12,21 @@ function App(){
         })
     }
 
+    function removeItem(id){
+
+        setTodos(todos.filter((todo,index) =>{
+            return id !== index
+        }))
+
+    }
 
     return(
     <div className="container">
-        <h1 class="heading"><u>Todo List</u></h1>
+        <h1 className="heading"><u>Todo List</u></h1>
         <Input receivedFunction={sendToInput} />
         <ul>
         {todos.map((todo, index)=>{
-            return <Item key={index} text={todo}/>
+            return <Item deleteItem={removeItem} key={index} id={index} text={todo}/>
         })}
         </ul>
     </div>)

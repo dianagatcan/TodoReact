@@ -13,12 +13,12 @@ function App(){
     }
 
     function removeItem(id){
-
         setTodos(todos.filter((todo,index) =>{
             return id !== index
         }))
 
     }
+
 
     return(
     <div className="container">
